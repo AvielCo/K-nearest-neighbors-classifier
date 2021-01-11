@@ -20,7 +20,14 @@ Giving the model the preprocessed dataset and train it using:
 
 The program will take the best trained model with K neighbor from 1 to 15 (usually the best is between 7 to 9).
 
-After that the program will test the best model using the preprocessed test dataset.
+- Test:
+
+After training will test the best model using the preprocessed test dataset.
+
+- Result:
+
+Will save a csv file that contains confusion matrix and classification report.
+Can be changed to save the best model.
 
 	*folders = letter folders (0 = a, 1 = b and so on).
 	Example of how the file tree should look like:
@@ -60,10 +67,12 @@ libraries needed:
 
 ## How to use?
 1. open terminal/CMD
-2. pre process TRAIN and TEST folders -> python preprocess.py [--train TRAIN_PATH] [--test TEST_PATH]
-	2.1. it will be output to "processed_train" or "processed_test"
-3. start the classifier -> python knn_classifier.py <path to train set> <path to test set>
-	3.1. output -> csv file that will hold both knn distance results
+2. pre process TRAIN and TEST folders -> python preprocess.py [--train TRAIN_PATH] [--test TEST_PATH].
+
+	2.1. it will be output to "processed_train" or "processed_test".
+3. start the classifier -> python knn_classifier.py <path to train set> <path to test set>.
+	
+	3.1. output -> csv file that will hold both knn distance results.
 
 *Note: can change the code to save the model and use it in various ways.
 	
