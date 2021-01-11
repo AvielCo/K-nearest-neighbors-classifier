@@ -5,29 +5,29 @@
 
 - Preprocess:
 
-Each sub folder in the train/test set goes through the same preprocess steps. 
-1) converting to gray scale
-2) if the width != height, add padding to the small one (white border) to make the picture a square so that width = height
-3) resizing to 40X40
+>Each sub folder in the train/test set goes through the same preprocess steps. 
+>1) converting to gray scale
+>2) if the width != height, add padding to the small one (white border) to make the picture a square so that width = height
+>3) resizing to 40X40
 
-The program used the ration of 90:10 for the train/validation sets
+>The program used the ration of 90:10 for the train/validation sets
 
 - Train:
 
-Giving the model the preprocessed dataset and train it using:
-1. Chi Square distance function
-2. Euclidean distance function
+>Giving the model the preprocessed dataset and train it using:
+>1. Chi Square distance function
+>2. Euclidean distance function
 
-The program will take the best trained model with K neighbor from 1 to 15 (usually the best is between 7 to 9).
+>The program will take the best trained model with K neighbor from 1 to 15 (usually the best is between 7 to 9).
 
 - Test:
 
-After training will test the best model using the preprocessed test dataset.
+>After training will test the best model using the preprocessed test dataset.
 
 - Result:
 
-Will save a csv file that contains confusion matrix and classification report.
-Can be changed to save the best model.
+>Will save a csv file that contains confusion matrix and classification report.
+>Can be changed to save the best model.
 
 	*folders = letter folders (0 = a, 1 = b and so on).
 	Example of how the file tree should look like:
