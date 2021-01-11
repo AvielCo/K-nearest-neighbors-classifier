@@ -20,7 +20,29 @@ The program will take the best trained model with K neighbor from 1 to 15 (usual
 
 After that the program will test the best model using the preprocessed test dataset.
 
-> *folders = letter folders (0 = a, 1 = b and so on)
+	*folders = letter folders (0 = a, 1 = b and so on).
+	Example of how the file tree should look like:
+		-root
+			- Train
+				- 0
+					- pic1.jpg
+					- pic2.jpg
+					- pic3.jpg
+				- 1
+				- 2
+				...
+			- Test
+				- 0
+				- 1
+					- pic1.jpg
+					- pic2.jpg
+					- pic3.jpg
+				- 2
+				...
+				
+			- preprocessed.py
+			- knn_classifier.py
+
 
 ## Installation
 python version 3.7
