@@ -3,7 +3,8 @@
 1. Train folder that contains folders*, each folder will contain the dataset to train the model.
 2. Test folder that contains folders*, each folder will contain the dataset to train the model.
 
-###### Preprocess:
+- Preprocess:
+
 Each sub folder in the train/test set goes through the same preprocess steps. 
 1) converting to gray scale
 2) if the width != height, add padding to the small one (white border) to make the picture a square so that width = height
@@ -11,7 +12,8 @@ Each sub folder in the train/test set goes through the same preprocess steps.
 
 The program used the ration of 90:10 for the train/validation sets
 
-###### Train:
+- Train:
+
 Giving the model the preprocessed dataset and train it using:
 1. Chi Square distance function
 2. Euclidean distance function
@@ -42,7 +44,6 @@ After that the program will test the best model using the preprocessed test data
 				
 			- preprocessed.py
 			- knn_classifier.py
-
 
 ## Installation
 python version 3.7
