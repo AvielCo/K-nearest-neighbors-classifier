@@ -1,7 +1,7 @@
 # KNN Classifier ##
 - Specifications:
-1. Train folder that contains folders*, each folder will contain the dataset to train the model.
-2. Test folder that contains folders*, each folder will contain the dataset to train the model.
+>1. Train folder that contains folders*, each folder will contain the dataset to train the model.
+>2. Test folder that contains folders*, each folder will contain the dataset to train the model.
 
 - Preprocess:
 
@@ -54,44 +54,45 @@
 
 ## Installation
 python version 3.7
+
 libraries needed:
--	opencv
--	numpy
--	os
--	argparse
--	pandas
--	scikit-learn
--	scikit-image
--	datetime
--	random
+>-	opencv
+>-	numpy
+>-	os
+>-	argparse
+>-	pandas
+>-	scikit-learn
+>-	scikit-image
+>-	datetime
+>-	random
 
 ## How to use?
-1. open terminal/CMD
-2. pre process TRAIN and TEST folders -> python preprocess.py [--train TRAIN_PATH] [--test TEST_PATH].
-
-	2.1. it will be output to "processed_train" or "processed_test".
-3. start the classifier -> python knn_classifier.py <path to train set> <path to test set>.
-	
-	3.1. output -> csv file that will hold both knn distance results.
-
-*Note: can change the code to save the model and use it in various ways.
+>1. open terminal/CMD
+>2. pre process TRAIN and TEST folders -> python preprocess.py [--train TRAIN_PATH] [--test TEST_PATH].
+>
+>	2.1. it will be output to "processed_train" or "processed_test".
+>3. start the classifier -> python knn_classifier.py <path to train set> <path to test set>.
+>	
+>	3.1. output -> csv file that will hold both knn distance results.
+>
+>*Note: can change the code to save the model and use it in various ways.
 	
 ## Credits
-Aviel Cohen - [linkedin](https://www.linkedin.com/in/aviel-cohen-a5840216b/)
-
-Noah Solomon - [github](https://github.com/SoloNoah),
-[linkedin](https://www.linkedin.com/in/noah-solomon-b40573135/)
-
-Emilia Zorin - [github](https://github.com/EmiliaZorin),
-[linkedin](https://www.linkedin.com/in/emilia-zorin-417635168/)
-
-Vitaly Nechayuk - [github](https://github.com/VitNecha),
-[linkedin](https://www.linkedin.com/in/vitaly-nechayuk/)
+>Aviel Cohen - [linkedin](https://www.linkedin.com/in/aviel-cohen-a5840216b/)
+>
+>Noah Solomon - [github](https://github.com/SoloNoah),
+>[linkedin](https://www.linkedin.com/in/noah-solomon-b40573135/)
+>
+>Emilia Zorin - [github](https://github.com/EmiliaZorin),
+>[linkedin](https://www.linkedin.com/in/emilia-zorin-417635168/)
+>
+>Vitaly Nechayuk - [github](https://github.com/VitNecha),
+>[linkedin](https://www.linkedin.com/in/vitaly-nechayuk/)
 
 ## Dataset contributors
 
-The dataset used in this project was HHD_v0
-HHD_v0 was divided into TEST/TRAIN sets which included all 26 sub directories related to each hebrew letter.
-The dataset, HHD_v0, was developed by  I. Rabaev, B. KurarBarakat, A. Churkin and J. El-Sana for their paper [HHD_v0](https://www.researchgate.net/publication/343880780_The_HHD_Dataset)
+>The dataset used in this project was HHD_v0
+>HHD_v0 was divided into TEST/TRAIN sets which included all 26 sub directories related to each hebrew letter.
+>The dataset, HHD_v0, was developed by  I. Rabaev, B. KurarBarakat, A. Churkin and J. El-Sana for their paper [HHD_v0](https://www.researchgate.net/publication/343880780_The_HHD_Dataset)
 
 
